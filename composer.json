@@ -1,0 +1,25 @@
+{
+    "name": "arceuz/5.1.instalacion_composer",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "arceuz"
+        }
+    ],
+    "require": {
+        "php-units-of-measure/php-units-of-measure": "^2.1",
+        "artack/color": "^0.6.0",
+        "pecee/simple-router": "5.3.0.5",
+        "illuminate/database": "^10.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":"App/",
+            "Core\\":"Core/"
+        },
+        "files":[
+            "functions.php"
+        ]
+    }
+}

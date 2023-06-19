@@ -1,0 +1,39 @@
+# Ignorar directorios y archivos generados por Composer
+/vendor/
+/composer.phar
+/composer.lock
+
+# Ignorar archivos y directorios generados por el entorno de desarrollo
+/.idea/
+/.vscode/
+/.phpunit.result.cache
+/.phpunit.result.cache.lock
+
+# Ignorar archivos de configuración de entorno
+.env
+.env.*
+
+# Ignorar archivos de caché y registro
+/log/
+/cache/
+
+# Ignorar archivos de respaldo
+*.bak
+*.swp
+
+# Ignorar archivos de dependencias de desarrollo
+/devDependencies/
+
+# Ignorar archivos y directorios específicos de tu proyecto
+/path/to/file.ext
+/path/to/directory/
+
+# Ignorar archivos de configuración personalizados (ejemplo)
+/config.php
+
+# Ignorar archivos de carga de pruebas (ejemplo)
+/tests/fixtures/
+
+# Ignorar archivos sensibles
+/secret-key.txt
+/database-credentials.json
