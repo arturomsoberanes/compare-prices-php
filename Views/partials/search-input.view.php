@@ -1,9 +1,18 @@
-<form action="search" class="row g-3">
-  <div class="col-auto">
-    <label for="keyword" class="visually-hidden">Search</label>
-    <input type="text" class="form-control" name="keywords" placeholder="Buscar...">
+<form action="search" method="GET" class="d-flex flex-column align-items-start my-4">
+  <div class="row g-3">
+    <div class="col-auto">
+      <label for="keyword" class="visually-hidden">Search</label>
+      <input type="text" class="form-control" name="keywords" value="<?= $_GET['keywords'] ?? '' ?>" placeholder="Buscar...">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-warning mb-3">🔍</button>
+    </div>
   </div>
-  <div class="col-auto">
-    <button type="submit" class="btn btn-warning mb-3">🔍</button>
+  <div class="row g-3 ms-0">
+    <select name="sort" class="form-select">
+      <option <?= $_GET['sort'] == 'normal' ? 'selected' : ''?> value="normal">Normal</option>
+      <option <?= $_GET['sort'] == 'asc' ? 'selected' : ''?> value="asc">Más barato primero</option>
+      <option <?= $_GET['sort'] == 'desc' ? 'selected' : ''?> value="desc">Más caro primero</option>
+    </select>
   </div>
 </form>
