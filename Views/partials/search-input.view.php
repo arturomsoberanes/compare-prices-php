@@ -10,9 +10,9 @@
   </div>
   <div class="row g-3 ms-0">
     <select name="sort" class="form-select">
-      <option <?= $_GET['sort'] == 'normal' ? 'selected' : ''?> value="normal">Normal</option>
-      <option <?= $_GET['sort'] == 'asc' ? 'selected' : ''?> value="asc">Más barato primero</option>
-      <option <?= $_GET['sort'] == 'desc' ? 'selected' : ''?> value="desc">Más caro primero</option>
+      <option <?= input('sort') == 'normal' ? 'selected' : ''?> value="normal">Normal</option>
+      <option <?= input('sort') == 'asc' ? 'selected' : ''?> value="asc">Más barato primero</option>
+      <option <?= input('sort') == 'desc' ? 'selected' : ''?> value="desc">Más caro primero</option>
     </select>
   </div>
 </form>
