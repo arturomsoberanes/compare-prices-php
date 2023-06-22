@@ -1,5 +1,5 @@
 <div align="center" id="top">
-  <img src="./screenshot.png"  width="100" height="100">   
+  <img src="./screenshot.png" height="200">   
 </div>
 
 # <h1 align="center">ATM Excercise</h1>
