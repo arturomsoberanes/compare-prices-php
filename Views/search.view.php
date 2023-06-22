@@ -2,7 +2,13 @@
 
 <div class="container d-flex flex-column align-items-center mt-3">
   <h1>Web Scraper</h1>
+
   <?php require_once('partials/search-input.view.php') ?>
+
+  <?php if (Core\Auth::check()) : ?>
+    <?php require_once('partials/save-search.view.php') ?>
+  <?php endif ?>
+
   <div class="row">
     <div class="col-6">
       <h2>Amazon</h2>
