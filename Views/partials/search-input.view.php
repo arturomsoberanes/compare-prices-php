@@ -2,7 +2,7 @@
   <div class="row g-3">
     <div class="col-auto">
       <label for="keyword" class="visually-hidden">Search</label>
-      <input type="text" class="form-control" name="keywords" value="<?= $_GET['keywords'] ?? '' ?>" placeholder="Buscar...">
+      <input type="text" class="form-control" name="keywords" value="<?= input('keywords') ?>" placeholder="Buscar...">
     </div>
     <div class="col-auto">
       <button type="submit" class="btn btn-warning mb-3">🔍</button>
