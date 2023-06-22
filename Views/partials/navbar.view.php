@@ -13,6 +13,11 @@
         </li>
         <?php if (Core\Auth::check()) : ?>
           <li class="nav-item">
+            <a href="/my-searches" class="nav-link">
+              Mis busquedas
+            </a>
+          </li>
+          <li class="nav-item">
             <span class="nav-link">
               <?= $_SESSION['name'] ?>
             </span>

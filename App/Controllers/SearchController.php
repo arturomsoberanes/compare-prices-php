@@ -51,4 +51,12 @@ class SearchController
     ]);
     return redirect('/my-searches');
   }
+
+  public function destroy($searchId)
+  {
+    $search = Search::find($searchId);
+    $search->delete();
+
+    return redirect('/my-searches');
+  }
 }
